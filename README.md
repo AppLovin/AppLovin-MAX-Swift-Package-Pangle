@@ -2,11 +2,9 @@
 
 The AppLovin MAX ByteDance / Pangle mediation adapter for iOS, distributed via Swift Package Manager.
 
-> **Version ceiling — `7.9.1.1.0`**
+> **Versioning note**
 >
-> The upstream Pangle SDK SPM repository ([`bytedance/AdsGlobalPackage`](https://github.com/bytedance/AdsGlobalPackage)) currently only tags releases up to SDK version `7.9.1.1`. This package is frozen at adapter version `7.9.1.1.0` until ByteDance publishes `8.x` tags. New releases will be published automatically once the upstream repository is updated.
->
-> For the latest Pangle adapter, use **CocoaPods**: `pod 'AppLovinMediationByteDanceAdapter'`
+> The upstream Pangle SDK SPM repository ([`bytedance/AdsGlobalPackage`](https://github.com/bytedance/AdsGlobalPackage)) uses a `X.Y.Z-release.N` tag scheme and may lag behind the latest certified adapter on CocoaPods. This package pins to the latest upstream-available SDK version. For the absolute latest Pangle adapter, use **CocoaPods**: `pod 'AppLovinMediationByteDanceAdapter'`
 
 ## Requirements
 

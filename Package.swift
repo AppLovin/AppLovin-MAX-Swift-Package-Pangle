@@ -2,10 +2,10 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 //  Copyright © 2026 AppLovin. All rights reserved.
 //
-//  NOTE: The upstream Pangle SDK SPM repository (bytedance/AdsGlobalPackage) only
-//  publishes tags up to 7.9.1-release.1, so this package pins the adapter to the
-//  matching 7.9.1.1.0 release. The CocoaPods adapter has advanced to 8.1.0.7.0
-//  but cannot be distributed via SPM until ByteDance ships an 8.x tag upstream.
+//  NOTE: The upstream Pangle SDK SPM repository (bytedance/AdsGlobalPackage) uses a
+//  X.Y.Z-release.N tag scheme and may lag behind the latest certified adapter. This
+//  package pins to the latest upstream-available SDK (8.1.0-release.6 = SDK 8.1.0.6)
+//  and the matching adapter binary (8.1.0.6.0).
 
 import PackageDescription
 
@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", from: "13.0.0"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "7.9.1-release.1")
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.1.0-release.6")
     ],
     targets: [
         .target(
@@ -33,8 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AppLovinMediationByteDanceAdapter",
-            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-7.9.1.1.0.zip",
-            checksum: "4f4476194afd61d47196a3538a14cf55bb4a0f2300945ff110c5222970794fdd"
+            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-8.1.0.6.0.zip",
+            checksum: "0fc80e33ce059fe7d2b61667403753251e363bdc5e0dfb987ee691c0cd16a56f"
         )
     ]
 )
