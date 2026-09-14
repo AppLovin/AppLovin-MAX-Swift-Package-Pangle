@@ -11,7 +11,7 @@ import PackageDescription
 
 let package = Package(
     name: "AppLovinMediationByteDanceAdapter",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "AppLovinMediationByteDanceAdapter",
@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", from: "13.0.0"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.2.1-release.0")
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.3.0-release.6")
     ],
     targets: [
         .target(
@@ -33,8 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AppLovinMediationByteDanceAdapter",
-            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-8.2.1.0.0.zip",
-            checksum: "f32973929186451d1f0016c7a3277df3b0db7bba454b0afd7edf32260fd30049"
+            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-8.3.0.6.1.zip",
+            checksum: "53f858d696b908f1172b7e4fa5a99b5706393de8f793332dd78c9fdb2ed5a477"
         )
     ]
 )
