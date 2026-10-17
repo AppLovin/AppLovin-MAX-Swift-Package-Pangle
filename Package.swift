@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", from: "13.0.0"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.3.0-release.8")
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.3.0-release.9")
     ],
     targets: [
         .target(
@@ -33,8 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AppLovinMediationByteDanceAdapter",
-            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-8.3.0.8.0.zip",
-            checksum: "3b412a8ea096d612b55b217d39d458538fbd3bb64ad40c06693ba82db87399cd"
+            url: "https://artifacts.applovin.com/ios/com/applovin/mediation/bytedance-adapter/AppLovinMediationByteDanceAdapter-8.3.0.9.0.zip",
+            checksum: "307ab21ea1d750b97c445b99a279b231e0210facbe988e9561783daa7344b1f3"
         )
     ]
 )
